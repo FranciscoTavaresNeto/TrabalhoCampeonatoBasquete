@@ -147,58 +147,59 @@ create table gamePlayer
     insert into player (nome, team) values ('Cherie Prater', 10);
 
 --INSERTS DOS JOGOS
-    insert into game (team1, team2, dataHora) values (1, 2, '2019-11-23 20:30');    
-    insert into game (team1, team2, dataHora) values (1, 3, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (1, 4, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (1, 5, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (1, 6, '2019-11-23 20:30');
+    
+    insert into game (team1, team2, dataHora) values (1, 10, '2019-11-2 20:30');
+    insert into game (team1, team2, dataHora) values (2, 9, '2019-11-2 20:30');
+    insert into game (team1, team2, dataHora) values (3, 8, '2019-11-2 20:30');
+    insert into game (team1, team2, dataHora) values (4, 7, '2019-11-2 20:30');
+    insert into game (team1, team2, dataHora) values (5, 6, '2019-11-3 20:30');
+    
+    insert into game (team1, team2, dataHora) values (1, 9, '2019-11-09 20:30');
+    insert into game (team1, team2, dataHora) values (8, 10, '2019-11-09 20:30');
+    insert into game (team1, team2, dataHora) values (2, 7, '2019-11-09 20:30');
+    insert into game (team1, team2, dataHora) values (3, 6, '2019-11-09 20:30');
+    insert into game (team1, team2, dataHora) values (4, 5, '2019-11-10 20:30');
+    
+    insert into game (team1, team2, dataHora) values (1, 8, '2019-11-16 20:30');
+    insert into game (team1, team2, dataHora) values (7, 9, '2019-11-16 20:30');
+    insert into game (team1, team2, dataHora) values (6, 10, '2019-11-16 20:30');
+    insert into game (team1, team2, dataHora) values (2, 5, '2019-11-16 20:30');
+    insert into game (team1, team2, dataHora) values (3, 4, '2019-11-17 20:30');
+    
     insert into game (team1, team2, dataHora) values (1, 7, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (1, 8, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (1, 9, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (1, 10, '2019-11-23 20:30');
-    
-    insert into game (team1, team2, dataHora) values (2, 3, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (2, 4, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (2, 5, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (2, 6, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (2, 7, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (2, 8, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (2, 9, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (2, 10, '2019-11-23 20:30');
-    
-    insert into game (team1, team2, dataHora) values (3, 4, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (3, 5, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (3, 6, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (3, 7, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (3, 8, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (3, 9, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (3, 10, '2019-11-23 20:30');
-    
-    insert into game (team1, team2, dataHora) values (4, 5, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (4, 6, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (4, 7, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (4, 8, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (4, 9, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (4, 10, '2019-11-23 20:30');
-    
-    insert into game (team1, team2, dataHora) values (5, 6, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (5, 7, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (5, 8, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (5, 9, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (5, 10, '2019-11-23 20:30');
-    
-    insert into game (team1, team2, dataHora) values (6, 7, '2019-11-23 20:30');
     insert into game (team1, team2, dataHora) values (6, 8, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (6, 9, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (6, 10, '2019-11-23 20:30');
+    insert into game (team1, team2, dataHora) values (5, 9, '2019-11-23 20:30');
+    insert into game (team1, team2, dataHora) values (4, 10, '2019-11-23 20:30');
+    insert into game (team1, team2, dataHora) values (2, 3, '2019-11-24 20:30');
     
-    insert into game (team1, team2, dataHora) values (7, 8, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (7, 9, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (7, 10, '2019-11-23 20:30');
+    insert into game (team1, team2, dataHora) values (1, 6, '2019-11-30 20:30');
+    insert into game (team1, team2, dataHora) values (5, 7, '2019-11-30 20:30');
+    insert into game (team1, team2, dataHora) values (4, 8, '2019-11-30 20:30');
+    insert into game (team1, team2, dataHora) values (3, 9, '2019-11-30 20:30');
+    insert into game (team1, team2, dataHora) values (2, 10, '2019-12-01 20:30');
     
-    insert into game (team1, team2, dataHora) values (8, 9, '2019-11-23 20:30');
-    insert into game (team1, team2, dataHora) values (8, 10, '2019-11-23 20:30');
+    insert into game (team1, team2, dataHora) values (1, 5, '2019-12-07 20:30');
+    insert into game (team1, team2, dataHora) values (4, 6, '2019-12-07 20:30');
+    insert into game (team1, team2, dataHora) values (3, 7, '2019-12-07 20:30');
+    insert into game (team1, team2, dataHora) values (2, 8, '2019-12-07 20:30');
+    insert into game (team1, team2, dataHora) values (9, 10, '2019-12-08 20:30');
     
-    insert into game (team1, team2, dataHora) values (9, 10, '2019-11-23 20:30');
-
+    insert into game (team1, team2, dataHora) values (1, 4, '2019-12-14 20:30');
+    insert into game (team1, team2, dataHora) values (3, 5, '2019-12-14 20:30');
+    insert into game (team1, team2, dataHora) values (2, 6, '2019-12-14 20:30');
+    insert into game (team1, team2, dataHora) values (7, 10, '2019-12-14 20:30');
+    insert into game (team1, team2, dataHora) values (8, 9, '2019-12-15 20:30');
+    
+    insert into game (team1, team2, dataHora) values (1, 3, '2019-12-21 20:30');
+    insert into game (team1, team2, dataHora) values (2, 4, '2019-12-21 20:30');
+    insert into game (team1, team2, dataHora) values (5, 10, '2019-12-21 20:30');
+    insert into game (team1, team2, dataHora) values (6, 9, '2019-12-21 20:30');
+    insert into game (team1, team2, dataHora) values (7, 8, '2019-12-22 20:30');
+    
+    insert into game (team1, team2, dataHora) values (1, 2, '2019-12-28 20:30');    
+    insert into game (team1, team2, dataHora) values (3, 10, '2019-12-28 20:30');
+    insert into game (team1, team2, dataHora) values (4, 9, '2019-12-28 20:30');
+    insert into game (team1, team2, dataHora) values (5, 8, '2019-12-28 20:30');
+    insert into game (team1, team2, dataHora) values (6, 7, '2019-12-29 20:30');
+    
 -- INSERTS JOGOJOGADOR
