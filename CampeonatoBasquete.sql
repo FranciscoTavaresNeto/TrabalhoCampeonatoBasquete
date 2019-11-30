@@ -15,11 +15,11 @@
     * 2 pontos pela vitória, 1 ponto pelo empate.
 
     Considerando o jogo entre os times Mosqueteiro Azul e Saci Vermelho ocorrido as 20:30 do último sábado:
-    1) Atribuir uma cesta de 3 pontos ao jogador Joao Palito do time Mosqueteiro Azul.
-    2) Alterar a cesta de 2 pontos atribuída erroneamente ao jogador Joao Palito do time Mosqueteiro Azul para o jogador Pedro Cestinha do mesmo time.
+    1) Atribuir uma cesta de 3 pontos ao jogador Joao Palito do time Mosqueteiro Azul. --Update genérico
+    2) Alterar a cesta de 2 pontos atribuída erroneamente ao jogador Joao Palito do time Mosqueteiro Azul para o jogador Pedro Cestinha do mesmo time. --Update genérico
     Considerando os jogos realizados até o momento:
-    3) Mostrar os jogadores que pontuaram em todos os jogos de seus times.
-    4) Mostrar os jogadores que marcaram cestas de 3 pontos em 3 jogos consecutivos de seus times.
+    3) Mostrar os jogadores que pontuaram em todos os jogos de seus times. --colocar um jogador que não pontuou em um jogo de seu time
+    4) Mostrar os jogadores que marcaram cestas de 3 pontos em 3 jogos consecutivos de seus times. --colocar jogadores que não pontuaram em cestas de 3 pontos
     5) Mostrar o placar final de cada jogo.
     6) Mostrar a tabela de classificação do campeonato. 
 */
