@@ -39,8 +39,31 @@ join (select Jogo.codigo, Jogo.Time2, Jogo.datahora, Time.nome from Jogo join Ti
 on tmp1.codigo = tmp2.codigo
 where (tmp1.nome like('MOSQUETEIRO AZUL') or tmp2.nome like('MOSQUETEIRO AZUL')) and (tmp1.nome like('SACI VERMELHO') or tmp2.nome like('SACI VERMELHO'));
 
--- DAQUI PRA BAIXO RETORNA VÁRIOS NADA
+--VIEW DA TABELA DO CAMPEONATO SEM RESULTADOS
+create view tabela_completa as (select tabela_casa.codigo, tabela_casa.datahora, tabela_casa.nome as casa, tabela_fora.nome as fora from (select Jogo.codigo, Jogo.Time1, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time1) as tabela_casa
+join (select Jogo.codigo, Jogo.Time2, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time2) as tabela_fora 
+on tabela_casa.codigo = tabela_fora.codigo);
 
+--SELECT DA TABELA DO CAMPEONATO SEM RESULTADOS
+select tabela_casa.codigo, tabela_casa.datahora, tabela_casa.nome as casa, tabela_fora.nome as fora from (select Jogo.codigo, Jogo.Time1, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time1) as tabela_casa
+join (select Jogo.codigo, Jogo.Time2, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time2) as tabela_fora 
+on tabela_casa.codigo = tabela_fora.codigo;
+
+-- UNITE THEM ALL!!!
+select tabela_casa.codigo, tabela_casa.datahora, tabela_casa.nome as casa, tabela_fora.nome as fora, JogoJogador.jogador, JogoJogador.cestas2, JogoJogador.cestas3, JogoJogador.lanceslivres from (select Jogo.codigo, Jogo.Time1, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time1) as tabela_casa
+join (select Jogo.codigo, Jogo.Time2, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time2) as tabela_fora 
+on tabela_casa.codigo = tabela_fora.codigo
+join (select JogoJogador.jogo, JogoJogador.cestas2, JogoJogador.cestas3, JogoJogador.lanceslivres, Jogador.nome, Time.nome from JogoJogador join Jogador on Jogador.codigo = JogoJogador.jogador join Time on Time.codigo = Jogador.time) as jogadores_pontos
+on tabela_casa.codigo = jogadores_pontos.jogo;
+
+-- JOGOJOGADOR+JOGADOR
+select JogoJogador.jogo, JogoJogador.cestas2, JogoJogador.cestas3, JogoJogador.lanceslivres, Jogador.nome, Time.nome from JogoJogador
+join Jogador on Jogador.codigo = JogoJogador.jogador
+join Time on Time.codigo = Jogador.time;
+
+
+-- DAQUI PRA BAIXO RETORNA VÁRIOS NADA
+/*
 select *
 from (select Jogo.codigo, Jogo.Time1, Jogo.datahora, extract
 (DOW FROM dataHora) as dia_semana, Time.nome
@@ -71,4 +94,4 @@ from (select Jogo.codigo, Jogo.Time1, Jogo.datahora, extract
     on tmp1.codigo = tmp2.codigo
 where (tmp1.nome ilike('MOSQUETEIRO AZUL') or tmp2.nome ilike('MOSQUETEIRO AZUL')) and (tmp1.nome ilike('SACI VERMELHO') or tmp2.nome ilike('SACI VERMELHO')) and (tmp1.dia_semana
 = 6 and tmp1.dataHora < current_date) order by tmp1.dataHora desc limit 1;
-
+*/
