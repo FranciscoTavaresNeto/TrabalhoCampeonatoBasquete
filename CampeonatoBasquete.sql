@@ -23,6 +23,22 @@
     5) Mostrar o placar final de cada jogo.
     6) Mostrar a tabela de classificação do campeonato. 
 */
+--VIEW DA TABELA DO CAMPEONATO
+create view tabela_completa as 
+(select tabela_casa.codigo, tabela_casa.datahora, tabela_casa.nome as casa, tabela_fora.nome as fora, jogadores_pontos.time, jogadores_pontos.nome, jogadores_pontos.cestas2, jogadores_pontos.cestas3, jogadores_pontos.lanceslivres 
+from (select Jogo.codigo, Jogo.Time1, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time1) as tabela_casa
+join (select Jogo.codigo, Jogo.Time2, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time2) as tabela_fora 
+on tabela_casa.codigo = tabela_fora.codigo
+join (select JogoJogador.jogo, JogoJogador.lanceslivres, JogoJogador.cestas2, JogoJogador.cestas3, Jogador.nome, Time.nome as time from JogoJogador
+join Jogador on Jogador.codigo = JogoJogador.jogador
+join Time on Time.codigo = Jogador.time) as jogadores_pontos
+on tabela_casa.codigo = jogadores_pontos.jogo);
+
+-- 5) Mostrar o placar final de cada jogo.
+select codigo, time, sum(lanceslivres + (cestas2*2) + (cestas3*3)) as pontos_totais
+from tabela_completa group by codigo, time order by codigo asc;
+
+
 -- TIRA O DIA DA SEMANA DOS JOGOS
 select extract (DOW FROM dataHora) from Jogo;
 
@@ -39,10 +55,6 @@ join (select Jogo.codigo, Jogo.Time2, Jogo.datahora, Time.nome from Jogo join Ti
 on tmp1.codigo = tmp2.codigo
 where (tmp1.nome like('MOSQUETEIRO AZUL') or tmp2.nome like('MOSQUETEIRO AZUL')) and (tmp1.nome like('SACI VERMELHO') or tmp2.nome like('SACI VERMELHO'));
 
---VIEW DA TABELA DO CAMPEONATO SEM RESULTADOS
-create view tabela_completa as (select tabela_casa.codigo, tabela_casa.datahora, tabela_casa.nome as casa, tabela_fora.nome as fora from (select Jogo.codigo, Jogo.Time1, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time1) as tabela_casa
-join (select Jogo.codigo, Jogo.Time2, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time2) as tabela_fora 
-on tabela_casa.codigo = tabela_fora.codigo);
 
 --SELECT DA TABELA DO CAMPEONATO SEM RESULTADOS
 select tabela_casa.codigo, tabela_casa.datahora, tabela_casa.nome as casa, tabela_fora.nome as fora from (select Jogo.codigo, Jogo.Time1, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time1) as tabela_casa
@@ -50,14 +62,16 @@ join (select Jogo.codigo, Jogo.Time2, Jogo.datahora, Time.nome from Jogo join Ti
 on tabela_casa.codigo = tabela_fora.codigo;
 
 -- UNITE THEM ALL!!!
-select tabela_casa.codigo, tabela_casa.datahora, tabela_casa.nome as casa, tabela_fora.nome as fora, JogoJogador.jogador, JogoJogador.cestas2, JogoJogador.cestas3, JogoJogador.lanceslivres from (select Jogo.codigo, Jogo.Time1, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time1) as tabela_casa
+select tabela_casa.codigo, tabela_casa.datahora, tabela_casa.nome as casa, tabela_fora.nome as fora, jogadores_pontos.time, jogadores_pontos.nome, jogadores_pontos.cestas2, jogadores_pontos.cestas3, jogadores_pontos.lanceslivres 
+from (select Jogo.codigo, Jogo.Time1, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time1) as tabela_casa
 join (select Jogo.codigo, Jogo.Time2, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time2) as tabela_fora 
 on tabela_casa.codigo = tabela_fora.codigo
-join (select JogoJogador.jogo, JogoJogador.cestas2, JogoJogador.cestas3, JogoJogador.lanceslivres, Jogador.nome, Time.nome from JogoJogador join Jogador on Jogador.codigo = JogoJogador.jogador join Time on Time.codigo = Jogador.time) as jogadores_pontos
+join (select JogoJogador.jogo, JogoJogador.lanceslivres, JogoJogador.cestas2, JogoJogador.cestas3, Jogador.nome, Time.nome as time from JogoJogador
+join Jogador on Jogador.codigo = JogoJogador.jogador
+join Time on Time.codigo = Jogador.time) as jogadores_pontos
 on tabela_casa.codigo = jogadores_pontos.jogo;
-
 -- JOGOJOGADOR+JOGADOR
-select JogoJogador.jogo, JogoJogador.cestas2, JogoJogador.cestas3, JogoJogador.lanceslivres, Jogador.nome, Time.nome from JogoJogador
+select JogoJogador.jogo, JogoJogador.lanceslivres, JogoJogador.cestas2, JogoJogador.cestas3, Jogador.nome, Time.nome as time from JogoJogador
 join Jogador on Jogador.codigo = JogoJogador.jogador
 join Time on Time.codigo = Jogador.time;
 
