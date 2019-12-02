@@ -47,12 +47,12 @@ join Time on Time.codigo = Jogador.time) as jogadores_pontos
 on tabela_casa.codigo = jogadores_pontos.jogo);
 
 -- PREMISSA DA 1 E 2
-select * from tabela_completa 
-where (casa ilike('MOSQUETEIRO AZUL') or fora ilike('MOSQUETEIRO AZUL') ) and (casa ilike('SACI VERMELHO') or fora ilike('SACI VERMELHO')) and () and ();
--- FALTA GARANTIR QUE O SELECT PEGUE SÓ O JOGO DO ÚLTIMO SÁBADO
+select * from tabela_completa where (casa ilike('MOSQUETEIRO AZUL') or fora ilike('MOSQUETEIRO AZUL') ) and (casa ilike('SACI VERMELHO') or fora ilike('SACI VERMELHO')) and (dia_semana = 6 and datahora <= now()) order by datahora desc limit 1;
+--1)
+
+--2)
 
 -- INSERTS PARA TESTAR A PREMISSA
-    insert into Jogo (Time1, Time2, dataHora) values (1, 2, '2019-11-30 20:30');
     insert into Jogo (Time1, Time2, dataHora) values (1, 2, '2019-11-23 20:30');
     --TIME 1
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (46, 1, 20, 8, 3);
@@ -76,28 +76,6 @@ where (casa ilike('MOSQUETEIRO AZUL') or fora ilike('MOSQUETEIRO AZUL') ) and (c
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (46, 18, 3, 14, 1);
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (46, 19, 11, 11, 3);
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (46, 20, 4, 16, 13);
-    --TIME 1
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (47, 1, 20, 8, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (47, 2, 4, 14, 4);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (47, 3, 19, 5, 10);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (47, 4, 9, 13, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (47, 5, 8, 6, 13);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (47, 6, 18, 17, 7);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (47, 7, 2, 18, 7);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (47, 8, 11, 16, 6);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (47, 9, 4, 6, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (47, 10, 4, 3, 13);
-    --TIME 2
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (47, 11, 18, 16, 2);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (47, 12, 6, 11, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (47, 13, 8, 18, 4);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (47, 14, 20, 3, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (47, 15, 18, 9, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (47, 16, 12, 14, 11);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (47, 17, 10, 1, 12);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (47, 18, 3, 14, 1);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (47, 19, 11, 11, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (47, 20, 4, 16, 13);
 
 -- PREMISSA DA 3 EM DIANTE
 
