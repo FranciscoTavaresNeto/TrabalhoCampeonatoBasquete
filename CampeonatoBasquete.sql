@@ -36,7 +36,7 @@ join Time on Time.codigo = Jogador.time) as jogadores_pontos
 on tabela_casa.codigo = jogadores_pontos.jogo);
 
 --VIEW COM OS DIAS DA SEMANA DE CADA JOGO
-create view tabela_completa as 
+create  or replace view tabela_completa as 
 (select tabela_casa.codigo, tabela_casa.datahora, extract (DOW FROM tabela_casa.dataHora) as dia_semana ,tabela_casa.nome as casa, tabela_fora.nome as fora, jogadores_pontos.time, jogadores_pontos.nome, jogadores_pontos.cestas2, jogadores_pontos.cestas3, jogadores_pontos.lanceslivres 
 from (select Jogo.codigo, Jogo.Time1, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time1) as tabela_casa
 join (select Jogo.codigo, Jogo.Time2, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time2) as tabela_fora 
@@ -47,7 +47,8 @@ join Time on Time.codigo = Jogador.time) as jogadores_pontos
 on tabela_casa.codigo = jogadores_pontos.jogo);
 
 -- PREMISSA DA 1 E 2
-select * from tabela_completa where (casa ilike('MOSQUETEIRO AZUL') or fora ilike('MOSQUETEIRO AZUL') ) and (casa ilike('SACI VERMELHO') or fora ilike('SACI VERMELHO'));
+select * from tabela_completa 
+where (casa ilike('MOSQUETEIRO AZUL') or fora ilike('MOSQUETEIRO AZUL') ) and (casa ilike('SACI VERMELHO') or fora ilike('SACI VERMELHO')) and () and ();
 -- FALTA GARANTIR QUE O SELECT PEGUE SÓ O JOGO DO ÚLTIMO SÁBADO
 
 -- INSERTS PARA TESTAR A PREMISSA
