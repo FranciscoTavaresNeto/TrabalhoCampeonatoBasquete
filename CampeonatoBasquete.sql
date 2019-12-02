@@ -25,32 +25,26 @@
     6) Mostrar a tabela de classificação do campeonato. 
 */
 --VIEW DA TABELA DO CAMPEONATO
-create view tabela_completa as 
-(select tabela_casa.codigo, tabela_casa.datahora, tabela_casa.nome as casa, tabela_fora.nome as fora, jogadores_pontos.time, jogadores_pontos.nome, jogadores_pontos.cestas2, jogadores_pontos.cestas3, jogadores_pontos.lanceslivres 
-from (select Jogo.codigo, Jogo.Time1, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time1) as tabela_casa
-join (select Jogo.codigo, Jogo.Time2, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time2) as tabela_fora 
-on tabela_casa.codigo = tabela_fora.codigo
-join (select JogoJogador.jogo, JogoJogador.lanceslivres, JogoJogador.cestas2, JogoJogador.cestas3, Jogador.nome, Time.nome as time from JogoJogador
-join Jogador on Jogador.codigo = JogoJogador.jogador
-join Time on Time.codigo = Jogador.time) as jogadores_pontos
-on tabela_casa.codigo = jogadores_pontos.jogo);
+    create view tabela_completa as 
+    (select tabela_casa.codigo, tabela_casa.datahora, tabela_casa.nome as casa, tabela_fora.nome as fora, jogadores_pontos.time, jogadores_pontos.nome, jogadores_pontos.cestas2, jogadores_pontos.cestas3, jogadores_pontos.lanceslivres 
+    from (select Jogo.codigo, Jogo.Time1, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time1) as tabela_casa
+    join (select Jogo.codigo, Jogo.Time2, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time2) as tabela_fora 
+    on tabela_casa.codigo = tabela_fora.codigo
+    join (select JogoJogador.jogo, JogoJogador.lanceslivres, JogoJogador.cestas2, JogoJogador.cestas3, Jogador.nome, Time.nome as time from JogoJogador
+    join Jogador on Jogador.codigo = JogoJogador.jogador
+    join Time on Time.codigo = Jogador.time) as jogadores_pontos
+    on tabela_casa.codigo = jogadores_pontos.jogo);
 
 --VIEW COM OS DIAS DA SEMANA DE CADA JOGO
-create  or replace view tabela_completa as 
-(select tabela_casa.codigo, tabela_casa.datahora, extract (DOW FROM tabela_casa.dataHora) as dia_semana ,tabela_casa.nome as casa, tabela_fora.nome as fora, jogadores_pontos.time, jogadores_pontos.nome, jogadores_pontos.cestas2, jogadores_pontos.cestas3, jogadores_pontos.lanceslivres 
-from (select Jogo.codigo, Jogo.Time1, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time1) as tabela_casa
-join (select Jogo.codigo, Jogo.Time2, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time2) as tabela_fora 
-on tabela_casa.codigo = tabela_fora.codigo
-join (select JogoJogador.jogo, JogoJogador.lanceslivres, JogoJogador.cestas2, JogoJogador.cestas3, Jogador.nome, Time.nome as time from JogoJogador
-join Jogador on Jogador.codigo = JogoJogador.jogador
-join Time on Time.codigo = Jogador.time) as jogadores_pontos
-on tabela_casa.codigo = jogadores_pontos.jogo);
-
--- PREMISSA DA 1 E 2
-select * from tabela_completa where (casa ilike('MOSQUETEIRO AZUL') or fora ilike('MOSQUETEIRO AZUL') ) and (casa ilike('SACI VERMELHO') or fora ilike('SACI VERMELHO')) and (dia_semana = 6 and datahora <= now()) order by datahora desc limit 1;
---1)
-
---2)
+    create  or replace view tabela_completa as 
+    (select tabela_casa.codigo, tabela_casa.datahora, extract (DOW FROM tabela_casa.dataHora) as dia_semana ,tabela_casa.nome as casa, tabela_fora.nome as fora, jogadores_pontos.time, jogadores_pontos.nome, jogadores_pontos.cestas2, jogadores_pontos.cestas3, jogadores_pontos.lanceslivres 
+    from (select Jogo.codigo, Jogo.Time1, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time1) as tabela_casa
+    join (select Jogo.codigo, Jogo.Time2, Jogo.datahora, Time.nome from Jogo join Time on Time.codigo = Jogo.Time2) as tabela_fora 
+    on tabela_casa.codigo = tabela_fora.codigo
+    join (select JogoJogador.jogo, JogoJogador.lanceslivres, JogoJogador.cestas2, JogoJogador.cestas3, Jogador.nome, Time.nome as time from JogoJogador
+    join Jogador on Jogador.codigo = JogoJogador.jogador
+    join Time on Time.codigo = Jogador.time) as jogadores_pontos
+    on tabela_casa.codigo = jogadores_pontos.jogo);
 
 -- INSERTS PARA TESTAR A PREMISSA
     insert into Jogo (Time1, Time2, dataHora) values (1, 2, '2019-11-23 20:30');
@@ -77,8 +71,16 @@ select * from tabela_completa where (casa ilike('MOSQUETEIRO AZUL') or fora ilik
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (46, 19, 11, 11, 3);
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (46, 20, 4, 16, 13);
 
--- PREMISSA DA 3 EM DIANTE
+-- PREMISSA DA 1 E 2
+    select * from tabela_completa where (casa ilike('MOSQUETEIRO AZUL') or fora ilike('MOSQUETEIRO AZUL') ) and (casa ilike('SACI VERMELHO') or fora ilike('SACI VERMELHO')) and (datahora = (select datahora from tabela_completa where (casa ilike('MOSQUETEIRO AZUL') or fora ilike('MOSQUETEIRO AZUL') ) and (casa ilike('SACI VERMELHO') or fora ilike('SACI VERMELHO')) and (dia_semana = 6 and datahora <= now()) order by datahora desc limit 1));
+    select datahora from tabela_completa where (casa ilike('MOSQUETEIRO AZUL') or fora ilike('MOSQUETEIRO AZUL') ) and (casa ilike('SACI VERMELHO') or fora ilike('SACI VERMELHO')) and (dia_semana = 6 and datahora <= now()) order by datahora desc limit 1;
+--1) Atribuir uma cesta de 3 pontos ao jogador Joao Palito do time Mosqueteiro Azul.
+    UPDATE SET
+--2) Alterar a cesta de 2 pontos atribuída erroneamente ao jogador Joao Palito do time Mosqueteiro Azul para o jogador Pedro Cestinha do mesmo time.
 
+-- PREMISSA DA 3 EM DIANTE
+-- 3) Mostrar os jogadores que pontuaram em todos os jogos de seus times.
+-- 4) Mostrar os jogadores que marcaram cestas de 3 pontos em 3 jogos consecutivos de seus times.
 -- 5) Mostrar o placar final de cada jogo.
 
 --casa
@@ -89,6 +91,8 @@ select sum(lanceslivres + (cestas2*2) + (cestas3*3)) as pontos_fora, time, codig
 select placar_casa.codigo, placar_casa.time_casa, placar_casa.pontos_casa, placar_fora.pontos_fora, placar_fora.time_fora from (select codigo, time as time_casa, sum(lanceslivres + (cestas2*2) + (cestas3*3)) as pontos_casa from tabela_completa where time = casa and datahora <= now() group by codigo, time) as placar_casa
 join (select sum(lanceslivres + (cestas2*2) + (cestas3*3)) as pontos_fora, time as time_fora, codigo from tabela_completa where time = fora and datahora <= now() group by codigo, time) as placar_fora
 on placar_casa.codigo = placar_fora.codigo;
+
+-- 6)  Mostrar a tabela de classificação do campeonato
 
 -- TIRA O DIA DA SEMANA DOS JOGOS
 select extract (DOW FROM dataHora) from Jogo;
