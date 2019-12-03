@@ -34,6 +34,52 @@ create table JogoJogador
     primary key(Jogo, Jogador)
 );
 
+--INSERTS FACTÍVEIS
+
+
+
+
+
+
+
+
+
+--TIME 2
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (29, 11, 9, 1, 8);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (29, 12, 10, 2, 3);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (29, 13, 0, 1, 0);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (29, 14, 8, 10, 1);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (29, 15, 8, 7, 2);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (29, 16, 8, 10, 5);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (29, 17, 9, 3, 3);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (29, 18, 9, 10, 10);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (29, 19, 9, 1, 4);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (29, 20, 7, 3, 3);
+
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (33, 11, 10, 3, 9);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (33, 12, 10, 7, 7);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (33, 13, 0, 6, 0);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (33, 14, 7, 1, 6);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (33, 15, 3, 2, 2);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (33, 16, 1, 0, 2);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (33, 17, 0, 5, 0);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (33, 18, 3, 5, 7);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (33, 19, 5, 6, 4);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (33, 20, 9, 4, 1);
+
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (37, 11, 0, 10, 0);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (37, 12, 7, 7, 1);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (37, 13, 6, 5, 5);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (37, 14, 10, 5, 3);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (37, 15, 5, 0, 5);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (37, 16, 10, 2, 9);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (37, 17, 2, 6, 9);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (37, 18, 0, 10, 0);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (37, 19, 0, 2, 0);
+insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (37, 20, 8, 10, 8);
+--TIME 3
+
+
 
 --INSERTS DOS TIMES
     insert into Time (nome) values ('MOSQUETEIRO AZUL');
@@ -208,16 +254,16 @@ create table JogoJogador
     
     --JOGO 1
     --TIME 1
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 1, 20, 8, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 2, 4, 14, 4);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 3, 19, 5, 10);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 4, 9, 13, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 5, 8, 6, 13);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 6, 18, 17, 7);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 7, 2, 18, 7);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 8, 11, 16, 6);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 9, 4, 6, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 10, 4, 3, 13);
+    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 1, 4, 3, 4);
+    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 2, 0, 4, 0);
+    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 3, 6, 7, 5);
+    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 4, 5, 0, 6);
+    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 5, 8, 0, 8);
+    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 6, 0, 4, 0);
+    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 7, 2, 9, 4);
+    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 8, 1, 0, 8);
+    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 9, 0, 3, 0);
+    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 10, 4, 9, 4);
     --TIME 10
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 91, 18, 17, 8);
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 92, 12, 12, 15);
@@ -231,16 +277,16 @@ create table JogoJogador
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (1, 100, 2, 4, 13);
     --JOGO 2
     --TIME 2
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (2, 11, 18, 16, 2);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (2, 12, 6, 11, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (2, 13, 8, 18, 4);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (2, 14, 20, 3, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (2, 15, 18, 9, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (2, 16, 12, 14, 11);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (2, 17, 10, 1, 12);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (2, 18, 3, 14, 1);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (2, 19, 11, 11, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (2, 20, 4, 16, 13);    
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (2, 11, 8, 0, 6);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (2, 12, 10, 9, 4);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (2, 13, 7, 10, 2);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (2, 14, 0, 3, 0);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (2, 15, 7, 4, 5);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (2, 16, 8, 4, 6);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (2, 17, 3, 1, 5);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (2, 18, 7, 3, 10);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (2, 19, 9, 0, 8);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (2, 20, 1, 1, 4);
     --TIME 9
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (2, 81, 19, 1, 6);
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (2, 82, 14, 2, 11);
@@ -323,16 +369,16 @@ create table JogoJogador
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (5, 60, 14, 1, 2);
     --JOGO 6
     --TIME 1
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (6, 1, 20, 8, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (6, 2, 4, 14, 4);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (6, 3, 19, 5, 10);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (6, 4, 9, 13, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (6, 5, 8, 6, 13);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (6, 6, 18, 17, 7);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (6, 7, 2, 18, 7);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (6, 8, 11, 16, 6);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (6, 9, 4, 6, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (6, 10, 4, 3, 13);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (6, 1, 6, 0, 5);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (6, 2, 7, 7, 10);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (6, 3, 7, 8, 6);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (6, 4, 4, 0, 10);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (6, 5, 5, 5, 2);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (6, 6, 7, 8, 3);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (6, 7, 5, 10, 8);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (6, 8, 1, 2, 5);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (6, 9, 2, 9, 7);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (6, 10, 4, 3, 8);
     --TIME 9
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (6, 81, 19, 1, 6);
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (6, 82, 14, 2, 11);
@@ -369,16 +415,16 @@ create table JogoJogador
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (7, 100, 2, 4, 13);
     --JOGO 8
     --TIME 2
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (8, 11, 18, 16, 2);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (8, 12, 6, 11, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (8, 13, 8, 18, 4);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (8, 14, 20, 3, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (8, 15, 18, 9, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (8, 16, 12, 14, 11);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (8, 17, 10, 1, 12);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (8, 18, 3, 14, 1);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (8, 19, 11, 11, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (8, 20, 4, 16, 13);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (8, 11, 1, 0, 8);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (8, 12, 8, 8, 9);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (8, 13, 7, 9, 6);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (8, 14, 5, 10, 1);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (8, 15, 3, 0, 6);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (8, 16, 3, 0, 9);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (8, 17, 0, 8, 0);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (8, 18, 2, 5, 10);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (8, 19, 7, 1, 8);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (8, 20, 2, 2, 1);
     --TIME 7
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (8, 61, 6, 1, 14);
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (8, 62, 5, 7, 5);
@@ -438,16 +484,16 @@ create table JogoJogador
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (10, 50, 14, 1, 2);
     --JOGO 11
     --TIME 1
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (11, 1, 20, 8, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (11, 2, 4, 14, 4);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (11, 3, 19, 5, 10);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (11, 4, 9, 13, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (11, 5, 8, 6, 13);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (11, 6, 18, 17, 7);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (11, 7, 2, 18, 7);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (11, 8, 11, 16, 6);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (11, 9, 4, 6, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (11, 10, 4, 3, 13);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (11, 1, 9, 0, 1);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (11, 2, 5, 0, 4);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (11, 3, 1, 4, 9);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (11, 4, 9, 0, 4);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (11, 5, 6, 1, 7);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (11, 6, 2, 3, 1);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (11, 7, 4, 4, 2);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (11, 8, 6, 0, 4);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (11, 9, 9, 0, 3);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (11, 10, 0, 1, 0);
     --TIME 8
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (11, 71, 19, 17, 2);
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (11, 72, 14, 10, 10);
@@ -507,16 +553,16 @@ create table JogoJogador
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (13, 100, 2, 4, 13);
     --JOGO 14
     --TIME 2
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (14, 11, 18, 16, 2);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (14, 12, 6, 11, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (14, 13, 8, 18, 4);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (14, 14, 20, 3, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (14, 15, 18, 9, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (14, 16, 12, 14, 11);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (14, 17, 10, 1, 12);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (14, 18, 3, 14, 1);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (14, 19, 11, 11, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (14, 20, 4, 16, 13);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (14, 11, 2, 0, 4);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (14, 12, 8, 0, 8);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (14, 13, 0, 3, 0);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (14, 14, 9, 6, 8);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (14, 15, 5, 4, 4);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (14, 16, 0, 10, 0);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (14, 17, 5, 0, 4);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (14, 18, 0, 1, 0);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (14, 19, 8, 9, 8);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (14, 20, 4, 0, 1);
     --TIME 5
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (14, 41, 6, 1, 14);
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (14, 42, 5, 7, 5);
@@ -553,16 +599,16 @@ create table JogoJogador
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (15, 40, 1, 14, 4);
     --JOGO 16
     --TIME 1
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (16, 1, 20, 8, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (16, 2, 4, 14, 4);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (16, 3, 19, 5, 10);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (16, 4, 9, 13, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (16, 5, 8, 6, 13);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (16, 6, 18, 17, 7);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (16, 7, 2, 18, 7);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (16, 8, 11, 16, 6);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (16, 9, 4, 6, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (16, 10, 4, 3, 13);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (16, 1, 0, 3, 0);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (16, 2, 9, 0, 9);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (16, 3, 6, 10, 8);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (16, 4, 9, 10, 10);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (16, 5, 6, 7, 4);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (16, 6, 6, 2, 3);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (16, 7, 5, 0, 10);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (16, 8, 1, 8, 9);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (16, 9, 5, 10, 2);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (16, 10, 10, 0, 2);
     --TIME 7
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (16, 61, 6, 1, 14);
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (16, 62, 5, 7, 5);
@@ -645,16 +691,16 @@ create table JogoJogador
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (19, 100, 2, 4, 13);
     --JOGO 20
     --TIME 2
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (20, 11, 18, 16, 2);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (20, 12, 6, 11, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (20, 13, 8, 18, 4);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (20, 14, 20, 3, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (20, 15, 18, 9, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (20, 16, 12, 14, 11);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (20, 17, 10, 1, 12);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (20, 18, 3, 14, 1);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (20, 19, 11, 11, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (20, 20, 4, 16, 13);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (20, 11, 0, 5, 0);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (20, 12, 4, 0, 1);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (20, 13, 2, 10, 5);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (20, 14, 9, 4, 10);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (20, 15, 2, 10, 4);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (20, 16, 1, 3, 6);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (20, 17, 10, 2, 5);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (20, 18, 1, 7, 9);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (20, 19, 0, 5, 0);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (20, 20, 5, 6, 5);
     --TIME 3
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (20, 21, 6, 1, 14);
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (20, 22, 5, 7, 5);
@@ -668,16 +714,16 @@ create table JogoJogador
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (20, 30, 14, 1, 2);
     --JOGO 21
     --TIME 1
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (21, 1, 20, 8, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (21, 2, 4, 14, 4);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (21, 3, 19, 5, 10);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (21, 4, 9, 13, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (21, 5, 8, 6, 13);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (21, 6, 18, 17, 7);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (21, 7, 2, 18, 7);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (21, 8, 11, 16, 6);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (21, 9, 4, 6, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (21, 10, 4, 3, 13);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (21, 1, 5, 8, 10);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (21, 2, 0, 7, 0);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (21, 3, 0, 6, 0);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (21, 4, 3, 6, 4);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (21, 5, 5, 7, 2);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (21, 6, 2, 6, 7);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (21, 7, 9, 1, 5);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (21, 8, 8, 7, 1);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (21, 9, 4, 0, 3);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (21, 10, 3, 6, 2);
     --TIME 6
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (21, 51, 6, 1, 14);
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (21, 52, 5, 7, 5);
@@ -760,16 +806,16 @@ create table JogoJogador
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (24, 90, 9, 2, 12);
     --JOGO 25
     --TIME 2
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (25, 11, 18, 16, 2);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (25, 12, 6, 11, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (25, 13, 8, 18, 4);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (25, 14, 20, 3, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (25, 15, 18, 9, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (25, 16, 12, 14, 11);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (25, 17, 10, 1, 12);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (25, 18, 3, 14, 1);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (25, 19, 11, 11, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (25, 20, 4, 16, 13);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (25, 11, 8, 3, 5);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (25, 12, 7, 6, 1);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (25, 13, 4, 10, 7);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (25, 14, 7, 0, 1);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (25, 15, 10, 5, 4);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (25, 16, 2, 0, 3);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (25, 17, 10, 0, 4);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (25, 18, 9, 1, 8);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (25, 19, 2, 7, 10);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (25, 20, 7, 6, 4);
     --TIME 10
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (25, 91, 18, 17, 8);
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (25, 92, 12, 12, 15);
@@ -783,16 +829,16 @@ create table JogoJogador
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (25, 100, 2, 4, 13);
     --JOGO 26
     --TIME 1
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (26, 1, 20, 8, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (26, 2, 4, 14, 4);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (26, 3, 19, 5, 10);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (26, 4, 9, 13, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (26, 5, 8, 6, 13);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (26, 6, 18, 17, 7);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (26, 7, 2, 18, 7);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (26, 8, 11, 16, 6);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (26, 9, 4, 6, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (26, 10, 4, 3, 13);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (26, 1, 0, 4, 0);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (26, 2, 6, 0, 3);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (26, 3, 8, 8, 4);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (26, 4, 2, 2, 5);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (26, 5, 1, 0, 3);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (26, 6, 5, 0, 2);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (26, 7, 5, 9, 2);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (26, 8, 2, 7, 4);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (26, 9, 9, 0, 1);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (26, 10, 3, 7, 10);
     --TIME 5
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (26, 41, 6, 1, 14);
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (26, 42, 5, 7, 5);
@@ -852,16 +898,7 @@ create table JogoJogador
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (28, 70, 14, 1, 2);
     --JOGO 29
     --TIME 2
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (29, 11, 18, 16, 2);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (29, 12, 6, 11, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (29, 13, 8, 18, 4);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (29, 14, 20, 3, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (29, 15, 18, 9, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (29, 16, 12, 14, 11);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (29, 17, 10, 1, 12);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (29, 18, 3, 14, 1);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (29, 19, 11, 11, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (29, 20, 4, 16, 13);
+    
     --TIME 8
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (29, 71, 19, 17, 2);
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (29, 72, 14, 10, 10);
@@ -898,16 +935,16 @@ create table JogoJogador
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (30, 100, 2, 4, 13);
     --JOGO 31
     --TIME 1
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (31, 1, 20, 8, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (31, 2, 4, 14, 4);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (31, 3, 19, 5, 10);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (31, 4, 9, 13, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (31, 5, 8, 6, 13);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (31, 6, 18, 17, 7);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (31, 7, 2, 18, 7);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (31, 8, 11, 16, 6);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (31, 9, 4, 6, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (31, 10, 4, 3, 13);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (31, 1, 0, 1, 0);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (31, 2, 0, 0, 0);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (31, 3, 8, 0, 10);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (31, 4, 9, 1, 4);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (31, 5, 4, 0, 10);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (31, 6, 2, 4, 10);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (31, 7, 8, 0, 3);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (31, 8, 4, 0, 7);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (31, 9, 8, 0, 7);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (31, 10, 9, 0, 10);
     --TIME 4
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (31, 31, 19, 17, 2);
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (31, 32, 14, 10, 10);
@@ -944,16 +981,7 @@ create table JogoJogador
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (32, 50, 14, 1, 2);
     --JOGO 33
     --TIME 2
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (33, 11, 18, 16, 2);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (33, 12, 6, 11, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (33, 13, 8, 18, 4);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (33, 14, 20, 3, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (33, 15, 18, 9, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (33, 16, 12, 14, 11);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (33, 17, 10, 1, 12);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (33, 18, 3, 14, 1);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (33, 19, 11, 11, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (33, 20, 4, 16, 13);
+    
     --TIME 6
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (33, 51, 6, 1, 14);
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (33, 52, 5, 7, 5);
@@ -1013,16 +1041,16 @@ create table JogoJogador
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (35, 90, 9, 2, 12);
     --JOGO 36
     --TIME 1
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (36, 1, 20, 8, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (36, 2, 4, 14, 4);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (36, 3, 19, 5, 10);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (36, 4, 9, 13, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (36, 5, 8, 6, 13);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (36, 6, 18, 17, 7);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (36, 7, 2, 18, 7);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (36, 8, 11, 16, 6);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (36, 9, 4, 6, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (36, 10, 4, 3, 13);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (36, 1, 0, 10, 0);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (36, 2, 0, 3, 0);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (36, 3, 3, 9, 5);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (36, 4, 7, 0, 1);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (36, 5, 4, 0, 6);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (36, 6, 7, 10, 4);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (36, 7, 0, 1, 0);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (36, 8, 8, 1, 10);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (36, 9, 6, 10, 8);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (36, 10, 7, 1, 1);
     --TIME 3
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (36, 21, 6, 1, 14);
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (36, 22, 5, 7, 5);
@@ -1036,16 +1064,7 @@ create table JogoJogador
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (36, 30, 14, 1, 2);
     --JOGO 37
     --TIME 2
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (37, 11, 18, 16, 2);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (37, 12, 6, 11, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (37, 13, 8, 18, 4);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (37, 14, 20, 3, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (37, 15, 18, 9, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (37, 16, 12, 14, 11);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (37, 17, 10, 1, 12);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (37, 18, 3, 14, 1);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (37, 19, 11, 11, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (37, 20, 4, 16, 13);
+    
     --TIME 4
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (37, 31, 19, 17, 2);
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (37, 32, 14, 10, 10);
@@ -1128,27 +1147,27 @@ create table JogoJogador
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (40, 80, 1, 14, 4);
     --JOGO 41
     --TIME 1
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (41, 1, 20, 8, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (41, 2, 4, 14, 4);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (41, 3, 19, 5, 10);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (41, 4, 9, 13, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (41, 5, 8, 6, 13);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (41, 6, 18, 17, 7);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (41, 7, 2, 18, 7);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (41, 8, 11, 16, 6);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (41, 9, 4, 6, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (41, 10, 4, 3, 13);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (41, 1, 6, 0, 9);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (41, 2, 6, 0, 3);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (41, 3, 6, 7, 8);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (41, 4, 3, 7, 5);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (41, 5, 8, 10, 5);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (41, 6, 7, 5, 3);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (41, 7, 10, 5, 6);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (41, 8, 5, 5, 6);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (41, 9, 6, 9, 6);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (41, 10, 4, 6, 4);
     --TIME 2
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (41, 11, 18, 16, 2);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (41, 12, 6, 11, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (41, 13, 8, 18, 4);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (41, 14, 20, 3, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (41, 15, 18, 9, 5);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (41, 16, 12, 14, 11);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (41, 17, 10, 1, 12);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (41, 18, 3, 14, 1);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (41, 19, 11, 11, 3);
-    insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (41, 20, 4, 16, 13);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (41, 11, 1, 5, 9);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (41, 12, 6, 2, 2);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (41, 13, 0, 0, 0);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (41, 14, 1, 3, 3);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (41, 15, 5, 1, 10);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (41, 16, 0, 5, 0);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (41, 17, 0, 9, 0);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (41, 18, 7, 0, 6);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (41, 19, 1, 6, 5);
+    insert into JogoJogador (jogo, jogador, cestas2, cestas3, lanceslivres) values (41, 20, 0, 0, 0);
     --JOGO 42
     --TIME 3
     insert into JogoJogador (Jogo, Jogador, cestas2, cestas3, lanceslivres) values (42, 21, 6, 1, 14);
